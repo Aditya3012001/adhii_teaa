@@ -1,40 +1,99 @@
+/* General body styles */
 body {
   text-align: center;
   margin-top: 30px;
-  font-family: "Courier";
-  background-color: #fff5e4;
-  color: #ff9494;
+  font-family: 'Poppins', sans-serif; /* A softer and more modern font */
+  background-color: #e0f7ff; /* Light pastel blue */
+  color: #4c8f8f; /* A cool teal color */
+  padding: 0;
+  margin: 0;
+  transition: background-color 0.3s ease;
 }
+
+/* Activity Question Style */
 #activityquestion {
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 56px;
+  margin-bottom: 40px;
+  font-family: 'Lobster', cursive; /* A cute, handwritten style font */
+  color: #3b7a7a; /* Deeper teal for emphasis */
 }
+
+/* Activity Item Style */
 .activity-item {
   display: inline-block;
-  margin: 10px;
+  margin: 20px;
   vertical-align: top;
-  color: #ff9494;
+  color: #4c8f8f; /* Matching teal color */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, color 0.3s ease;
 }
+
+.activity-item:hover {
+  transform: translateY(-10px); /* Slight lift effect when hovering */
+  color: #366666; /* Darker teal color on hover */
+}
+
+/* Image Style for Activity Item */
 .activity-item img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  border: 5px solid #ff9494;
+  border: 5px solid #77c4c4; /* A lighter teal border */
   object-fit: cover;
-  padding: 10px;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease;
 }
+
+.activity-item img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  border-color: #4c8f8f; /* Darker teal border on hover */
+}
+
+/* Label Style for Activity Item */
 .activity-item label {
   display: block;
-}
-.button {
-  padding: 10px 20px;
   font-size: 18px;
+  margin-top: 10px;
+  color: #4c8f8f; /* Soft teal for text */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.activity-item label:hover {
+  color: #66b3b3; /* Slightly lighter teal color on hover */
+}
+
+/* Button Style */
+.button {
+  padding: 12px 30px;
+  font-size: 20px;
   cursor: pointer;
-  margin: 10px;
-  font-family: "courier";
+  margin: 15px;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
-  background-color: #ffe3e1;
-  color: #e67373;
-  border-radius: 12px;
-  border: 2px solid #ffe3e1;
+  background-color: #a2d6e5; /* Light pastel blue background */
+  color: #3b7a7a; /* Deep teal for text */
+  border-radius: 25px;
+  border: 2px solid #a2d6e5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a lift effect */
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #77c4c4; /* Slightly darker teal on hover */
+  color: white; /* Text turns white on hover */
+  border-color: #77c4c4; /* Border also matches the new background color */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+/* Adding a subtle gradient to the page */
+body {
+  background: linear-gradient(135deg, #e0f7ff 0%, #b3d9e6 100%);
+}
+
+/* Adding some space between sections */
+section {
+  margin-top: 50px;
 }

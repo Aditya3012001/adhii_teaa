@@ -1,60 +1,134 @@
+/* General Body Styles */
 body {
   text-align: center;
   margin-top: 30px;
-  font-family: "Courier";
-  background-color: #fff5e4;
-  color: #ff9494;
-  display: flex;
-  flex-direction: column;
-}
-h1 {
-  font-size: 40px;
-}
-
-form .header {
-  width: 100%;
-  display: flex;
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #ff9494;
-}
-
-.form-group {
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  background-color: #2e2e2e; /* Dark background */
+  color: #e0e0e0; /* Light gray text */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 25px;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0; /* Remove default body margin */
 }
 
-.button {
-  padding: 6px 10px;
-  font-size: 15px;
-  cursor: pointer;
-  margin: 10px;
-  font-family: "courier";
+/* Heading Styles */
+h1 {
+  font-size: 45px;
+  color: #b0b0b0; /* Darker gray color for headings */
+  font-family: 'Lobster', cursive; /* Handwritten cursive font for charm */
+  margin-bottom: 30px; /* Increase space between heading and form */
+  text-align: center; /* Ensure heading is centered */
+  line-height: 1.3;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #2c2c2c; /* Slightly lighter dark background */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  text-align: left; /* Align form text to the left for better readability */
+}
+
+/* Form Header */
+form .header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #b0b0b0; /* Darker gray for text */
+  font-weight: 600;
+  text-align: left; /* Align the header to the left */
+}
+
+/* Form Group Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #b0b0b0; /* Darker gray text */
+  text-align: left; /* Left align form labels */
+}
+
+/* Label Styling */
+.form-group label {
+  font-size: 18px;
   margin-bottom: 10px;
-  background-color: #ffe3e1;
-  color: #e67373;
-  border-radius: 12px;
-  border: 2px solid #ffe3e1;
-  transition: 0.3s;
+  color: #b0b0b0; /* Darker gray for labels */
+}
+
+/* Input Styles */
+input[type="date"] {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #3a3a3a; /* Dark gray background */
+  color: #e0e0e0; /* Light gray text */
+  border-radius: 20px;
+  border: 2px solid #555555; /* Lighter gray border */
+  transition: all 0.3s ease;
+  width: 100%; /* Full width for better alignment */
+}
+
+input[type="date"]:hover {
+  border-color: #777777; /* Lighter border on hover */
+  background-color: #4a4a4a; /* Slightly lighter gray background */
+}
+
+/* Button Styles */
+.button {
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #3a3a3a; /* Darker background for the button */
+  color: #e0e0e0; /* Light gray text */
+  border-radius: 30px;
+  border: 2px solid #3a3a3a; /* Matching border color */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  width: 100%; /* Full width for button */
 }
 
 .button:hover {
-  background-color: #ff9494;
-  color: #ffe3e1;
-  border: 2px solid #ff9494;
+  background-color: #555555; /* Lighter gray on hover */
+  color: white;
+  border: 2px solid #555555;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-input[type="date"] {
-  padding: 6px 10px;
-  font-size: 15px;
-  cursor: pointer;
-  margin: 10px;
-  font-family: "courier";
-  margin-bottom: 10px;
-  background-color: #ffe3e1;
-  color: #e67373;
-  border-radius: 12px;
-  border: 2px solid #ffe3e1;
+/* Adjusting spacing for better layout */
+form .form-group {
+  margin-bottom: 25px;
+  align-items: stretch; /* Ensure inputs stretch to full width */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  input[type="date"] {
+    font-size: 14px;
+  }
 }
